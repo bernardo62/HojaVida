@@ -1,0 +1,180 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background:  #9a9abb;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+/* Crear grilla  (No hay necesidad de usar float */
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 5px auto;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(8, auto);
+
+	grid-template-areas:    "foto foto datos datos datos datos"                        
+                            "perfil perfil escolaridad escolaridad escolaridad escolaridad"
+						    "sidebar sidebar formacion formacion formacion formacion"
+							"experiencia experiencia experiencia experiencia experiencia experiencia"
+							"redes contacto contacto contacto contacto contacto";
+}
+
+
+.contenedor .escolaridad,
+.contenedor .foto,
+.contenedor .datos,
+.contenedor .formacion,
+.contenedor .experiencia,
+.contenedor .sidebar,
+.contenedor .contacto,
+.contenedor .redes{
+	
+	padding: 5px;
+	border-radius: 20px;
+    min-height: 30px;
+	color: darkblue;
+}
+
+.contenedor .perfil {
+	grid-area: perfil;
+}
+
+
+.contenedor .escolaridad {
+	grid-area: escolaridad;
+}
+
+.contenedor .formacion {
+	grid-area: formacion;
+}
+
+.contenedor .experiencia {
+	grid-area: experiencia;
+}
+
+.contenedor .sidebar {
+	background: #fff;
+	border: 10px double darkblue;
+	padding: 5px;
+	display: flex;
+	align-items: center;	
+	min-height: 100px;
+	grid-area: sidebar;
+	
+}
+
+.contenedor .foto,
+.contenedor .datos {
+	background: #fff;
+	border: 10px double darkblue;
+	height: 300px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: darkblue;
+	flex-direction: column;	
+}
+
+.yo{
+	font-size: 28px;
+}
+
+.contenedor .foto {
+	grid-area: foto;
+}
+
+.contenedor .datos {
+	grid-area: datos;
+	
+}
+
+.contenedor .contacto {
+	grid-area: contacto;
+	background: #FFF;
+	border: 10px double darkblue;
+}
+
+.contenedor .redes {
+	background: white;
+	grid-area: redes;
+	border: 10px double darkblue;
+}
+
+
+tabla {
+	width: 100%;
+	border: 1px solid #000;
+ }
+ th, td {
+	
+	text-align: left;
+	vertical-align:middle;
+	border: 1px solid #000;
+	border-collapse: collapse;
+	padding: 0.3em;
+	caption-side:b;
+ }
+
+ caption {
+	padding: 0.3em;
+	color: darkblue;
+	 background: lightgray;
+ }
+ th {
+	background: #CCC;
+	color: #111;
+ }
+
+ table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 4px;
+	background: #fff url("gradient.gif") bottom left repeat-x;
+	color: #fff;
+	border: 10px double darkblue;
+ }
+ td {
+	background: #EEE;
+	color: #333;
+ }
+
+ 
+
+ h1 {
+	background: darkblue;
+	color: white;
+	text-align: center;
+	padding: 2px;
+	font-size: 24;
+ }
+
+
+
+
+@media screen and (max-width: 700px){
+	.contenedor {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(9, auto);
+		grid-template-areas: 						
+							"foto datos"
+							"perfil perfil"
+							"sidebar sidebar"
+							"escolaridad escolaridad"							
+							"formacion formacion"
+							"experiencia experiencia"
+							"redes redes"
+							"contacto contacto";
+	}
+
+	.tabla{
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,89 @@
+/* Importación de fuentes de google fonts */ 
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+
+
+input{
+  background-color: #b1f3f8; 
+  width:90%;
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: darkblue; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 10px; 
+}
+
+
+textarea{
+  background-color: #fce6b6; 
+  width: 90%;
+   
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: grey; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 10px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  
+}
+
+
+button{
+    height: 40px; 
+    background: #b1b1d8;
+    color: darkblue;
+    padding: 10px;
+    text-decoration: none;
+    border: white 4px ridge;
+    margin-right: 10%;
+    float:right;
+
+Fuente: https://www.iteramos.com/pregunta/58780/coloca-un-boton-alineado-a-la-derecha
+    }
+
+button:hover{
+    border: white 4px outset;
+    background: #dadaf5;
+    font-weight: 600;
+}
+
+button:active{
+    border: rgb(169, 169, 190) 4px inset;
+    background: #1a1a5e;
+    color: rgb(121, 121, 138);
+
+
+
+.aviso{
+  font-size: 13px;  
+  color: #9e0101;  
+}
+
+::-webkit-input-placeholder {
+ color: #ec5c09;
+}
+
+::-webkit-textarea-placeholder {
+ color: #08fc1c;
+}
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #48c2d8;
+}
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #48d3d8;
+}

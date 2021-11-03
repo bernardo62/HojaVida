@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="navbar.css">
+	<link rel="stylesheet" href="font.css">
+	<link rel="stylesheet" href="redes.css">
+	<link rel="stylesheet" href="contacto.css">
+	<title>Mi hoja de vida</title>
+</head>
+<body>
+
+	<nav id="ini">
+        <button class="nav-boton" onclick="accion()">MENÚ</button>
+        <a href="#perfil" class="nav-enlace desaparece">PERFIL</a>
+        <a href="#esc" class="nav-enlace desaparece">ESCOLARIDAD</a>
+        <a href="#expro" class="nav-enlace desaparece">EXPERIENCIA <br> PROFESIONAL</a>
+		<a href="#exdoc" class="nav-enlace desaparece">EXPERIENCIA <br> DOCENTE</a>
+        <a href="#red" class="nav-enlace desaparece">REDES</a>
+		<a href="#ini" class="nav-enlace desaparece ini">&#11165 &#11165</a>
+
+		<!-- Ver símbolos en:  https://www.htmlsymbols.xyz/geometric-symbols -->
+
+    </nav>
+
+	
+
+    <script>
+    function accion(){
+        
+        var ancla = document.getElementsByClassName('nav-enlace');
+        for(var i = 0; i < ancla.length; i++){
+            ancla[i].classList.toggle('desaparece');
+        }
+    }
+    </script>
+    
+
+	<div class="contenedor">
+      
+		<header class="escolaridad">
+			<h1 id="esc">ESCOLARIDAD</h1>
+		</header>
+		<main class="formacion">
+			<h1>Formación Académica Formal</h1>
+			<table class="tabla">
+				<tr>							  
+				  <th>Título</th>			  
+				  <th>Institución</th>			  
+				  <th>año</th>
+				</tr>
+
+				<tr>
+				  <td>Ingeniero Mecánico</td>
+				  <td>U.P.B. Medellín</td>
+				  <td>1986</td>
+				</tr>
+
+				<tr>
+					<td>Especialista en Gerencia de la Calidad</td>
+					<td>EAFIT Medellín</td>
+					<td>1994</td>
+				  </tr>
+
+				<tr>
+					<td>Magister en Gestión Tecnológica</td>
+					<td>U.P.B. Medellín</td>
+					<td>2012</td>
+				</tr>
+				  
+				<tr>
+					<td>Tecnología en Desarrollo de Software</td>
+					<td>I. U. Digital de Antioquia</td>
+					<td>en curso</td>
+				</tr>
+
+
+			  </table>
+
+			  <br><br>
+
+
+			  <h1>Formación Académica no Formal</h1>
+			<table class="tabla">
+				<tr>							  
+				  <th>Título</th>			  
+				  <th>Institución</th>			  
+				  <th>año</th>
+				</tr>
+
+				<tr>
+				  <td>Diplomado en Educación Virtual</td>
+				  <td>CEIPA Sabaneta</td>
+				  <td>2016</td>
+				</tr>
+
+				<tr>
+					<td>Técnico en Refrigeración</td>
+					<td>Escuela Antioqueña de Refrigeración Medellín</td>
+					<td>2017</td>
+				  </tr>
+
+				  <tr>
+					<td>Técnico en Electrónica</td>
+					<td>Confnalco Medellín</td>
+					<td>2002</td>
+				  </tr>
+
+				  <tr>
+					<td>Expresión Verbal Positiva</td>
+					<td>Academia de la palabra, Medellín</td>
+					<td>2007</td>
+				  </tr>
+
+				  <tr>
+					<td>Calderas y sistemas de Vapor</td>
+					<td>Pascual Bravo, Medellín</td>
+					<td>1993></td>
+				  </tr>
+
+			  </table>
+
+			  <br><br>
+
+			  <h1>Formación Autodidacta</h1>
+
+			<table class="tabla">
+				<tr>							  
+				  <th>Tema</th>			  
+				  <th>Fuente</th>			  
+				  <th>año</th>
+				</tr>
+
+				<tr>
+				  <td>Minería de Datos / Big Data</td>
+				  <td>Comunidad "R"</td>
+				  <td>2019</td>
+				</tr>
+
+				<tr>
+					<td>Procesadoes Arduino</td>
+					<td>Bitwise Ar</td>
+					<td>2020</td>
+				  </tr>
+
+				  <tr>
+					<td>Lenguaje Java</td>
+					<td>Pildorasinformaticas.com</td>
+					<td>2020</td>
+				  </tr>
+				  
+				  <tr>
+					<td>Grid / CSS</td>
+					<td>FalconMasters</td>
+					<td>2021</td>
+				  </tr>
+
+				  <tr>
+					<td>Django / Python</td>
+					<td>Pildorasinformaticas.com</td>
+					<td>2021</td>
+				  </tr>
+
+
+			  </table>
+
+			
+		</main>
+
+		
+		<div class="perfil">
+			<h1 id="perfil">PERFIL</h1>
+		</div>
+		
+		<aside class="sidebar">
+			<p>
+				Como Ingeniero Mecánico he ejercido en empresas mineras, agrícolas y manufactureras.
+				<br>He ocupado cargos en distintas áreas de la cadena valor, como diseño, interventorías, producción, mantenimiento y asesor comercial de productos de ingeniería.
+				<br><br>
+				Como Especialista en Gerencia de la Calidad me he enfocado en el control estadístico de procesos. Tecnicas de control de procesos a 6 sigmas.
+				<br><br>
+				También me gradué como magister en Gestión Tecnológica. Los últimos años los he dedicado al estudio 
+				del Big Data, concretamente en técnicas de análisis avanzado de información, 
+				como Minería de Datos, Inteligencia de Negocios, Redes Neuronales para hacer estudios de clusterización,
+				propectiva, riesgo, etc.
+				<br><br>
+				Como docente universitario, tengo ya más de 20 años dictando catedras del campo del análiis de información,
+				como Estadística descriptiva e inferencial, Estadística para invetigación de Mercados, Estadística Multivariada, 
+				Control Estadístico de Procesos para control de calidad a 6 segmas, Investigación de Operaciones, Diseño de Experimentos, etc. 
+				<br><br>El logro más importante es un curso que he diseñado de Minería de Datos / Big Data para aprender a manejar las herramientas de análisis
+				más avanzadas. Todas las herramientas están en aplicaciones de código abierto y 
+				El curso está dirigido a profesionales de todas las áreas.
+			</p>
+		</aside>
+		
+
+
+		<div class="foto">
+			<img src="imagenes/boina.jpg" height="200px" width="180px"/>
+		</div>
+
+		<div class="datos">
+			<p class="yo"><b>Bernardo León Hoyos Espinosa</b><br><br></p>
+			
+			<p>Nacionalidad: Colombiana
+			<br><br>
+			Teléfono fijo: 604 351 0407
+			<br><br>
+			Celular: +57 311 624 5373
+			<br><br>
+			Email: archivosdeleonhoyos@gmail.com</p>
+		</div>
+
+		<div class="experiencia">
+			<h1 id="expro">Experiencia Profesional</h1>
+			<table class="tabla">
+				<tr>							  
+				  <th>Empresa</th>
+				  <th>Cargo</th>			  
+				  <th>Ciudad</th>			  
+				  <th>Años</th>
+				  <th>Funciones</th>
+				</tr>
+
+				<tr>
+				  <td>GRUPO AERO: Indupuertas / Aeroprofiles</td>
+				  <td>Asesor Comerical</td>
+				  <td>Itagüí</td>
+				  <td>7</td>
+				  <td>Comercializar productos de carpintería metálica en empresas constructoras del país.</td>
+				</tr>
+
+				<tr>
+					<td>SEALCO</td>
+					<td>Asesor Comercial</td>
+					<td>Itagüí/</td>
+					<td>1</td>
+					<td>Comercializar productos de sellamiento hidráulico y neumátio</td>
+				</tr>
+
+				<tr>
+					<td>INDISA</td>
+					<td>Ingeniero de Proyectos</td>
+					<td>Medellín</td>
+					<td>3</td>
+					<td>Diseño de equipos y maquinaria, interventorías, montajes industriales, asesorías de ingeniería.</td>
+				</tr>
+				  
+				<tr>
+					<td>CODISCOS / TRONEX</td>
+					<td>Jefe de Mantenimiento</td>
+					<td>Medellín</td>
+					<td>8</td>
+					<td>Mantenimiento de la planta de producción de discos y ensambladoras de pilas Tronex</td>
+				</tr>
+
+				<tr>
+					<td>OBRAS CIVILES S.A.</td>
+					<td>Administrdor</td>
+					<td>Apartadó / Urabá</td>
+					<td>2</td>
+					<td>Alquiler de maquinaria pesada. Retro-excavadoras y Bull Dozert</td>
+				</tr>
+							  
+				<tr>
+					<td>INMETALCO</td>
+					<td>Jefe de planta</td>
+					<td>Itagüí</td>
+					<td>3</td>
+					<td>Fabricación de estructuras metálicas, cerchas, pórticos, etc. 
+						Fabricación de ductería metálica y equipos de manejo de materiales, linea MATEC</td>
+				</tr>
+
+			  </table>	
+			  <br><br>
+
+			  <h1 id="exdoc">Experiencia Docente</h1>
+			  <table class="tabla">
+				  <tr>							  
+					<th>Empresa</th>
+					<th>Cargo</th>			  
+					<th>Ciudad</th>			  
+					<th>Años</th>
+					<th>Funciones</th>
+				  </tr>
+  
+				  <tr>
+					<td>SENA</td>
+					<td>Instructor</td>
+					<td>Medellín / Bello</td>
+					<td>1</td>
+					<td>Instructor virtual Técnica Programación de Software</td>
+				  </tr>
+  
+				  <tr>
+					  <td>CEIPA</td>
+					  <td>Docente tiempo completo</td>
+					  <td>Sabaneta / Barranquilla</td>
+					  <td>5</td>
+					  <td>Docente de ciencias básicas. Materias de análisis de información. 
+						  Matemáticas, Estadística, Investigación de Operaciones, Matemática Financiera, Administración de Operaciones.</td>
+				  </tr>
+  
+				  <tr>
+					  <td>CORPORACIÓN UNIVERSITARIA LASALLISTA CUL</td>
+					  <td>Docente tiempo completo</td>
+					  <td>Caldas, Antioquia</td>
+					  <td>5</td>
+					  <td>Docente de la facultad de Ingeniería Materias de análisis de información. 
+						  Estadística Descriptiva e Inferencial, Estadística Multivariada, Diseño de Experimentos, 
+						  Investiación de Operaciones</td>
+				  </tr>
+					
+				  <tr>
+					  <td>INSTITUTO TECNOLÓGICO METROPOLITANO ITM</td>
+					  <td>Catedrático en programa de postgrado</td>
+					  <td>Medellín</td>
+					  <td>4</td>
+					  <td>Docente catedrático de Control Estadístico de Procesos, Gestión Tecnológica en especialización.</td>
+				  </tr>
+  
+				  <tr>
+					  <td>UNIVERSIDAD de MEDELLÍN</td>
+					  <td>Docente catedrático en las facultades de Ingeniería y Administración</td>
+					  <td>Medellín </td>
+					  <td>3</td>
+					  <td>Catedrático. Gerencia de la Calidad - Investigación de Operaciones - Estadística aplicada</td>
+				  </tr>
+
+				  <tr>
+					<td>UNIVERSIDAD CATÓLICA DE ORIENTE</td>
+					<td>Docente catedrático en las facultades de Ingeniería y Contaduría</td>
+					<td>Rionegro</td>
+					<td>5</td>
+					<td>Catedrático. Investigación de Operaciones - Métodos cuantitativos - Estadística.</td>
+				</tr>
+
+				<tr>
+					<td>UNICIENCIA (Corporación Alta Gerencia)</td>
+					<td>Docente catedrático en los programas de Contaduría y Administración</td>
+					<td>Medellín</td>
+					<td>4</td>
+					<td>Catedrático de Estadística Descriptiva e Inferencial</td>
+				</tr>
+
+				<tr>
+					<td>UNIVERSIDAD PONTIFICIA BOLIVARIANA</td>
+					<td>Docente catedrático en la facultad de Ingeniería</td>
+					<td>Medellín</td>
+					<td>2</td>
+					<td>Catedrático. Diseño de Experimentos</td>
+				</tr>
+  
+				</table>	
+				<br><br>
+		</div>
+
+
+<!-- Redes sociales y contacto-->
+		
+		<footer class="redes">
+			<h3 id="red"></h3>
+			<br>
+			
+		<!-- BLOQUE REDES SOCIALES -->				
+					<div class="social-bar">
+						<a href="https://twitter.com/" target="_blank" class="icono icon-twitter twitter"></a>
+						<a href="https://www.instagram.com/" target="_blank" class="icono icon-instagram instagram"></a>
+						<a href="https://www.facebook.com/blhe.blhe.37" target="_blank" class="icono icon-facebook facebook"></a>
+						<a href="https://api.whatsapp.com/send?phone=573116245373" target="_blank" class="icono icon-whatsapp whatsapp"></a>
+						<a href="https://youtu.be/q9PyWeXQXYk" target="_blank" class="icono icon-youtube youtube"></a>
+						<a href="https://www.linkedin.com/in/bernardo-le%C3%B3n-46008718a/" target="_blank" class="icono icon-linkedin linkedin"></a>
+					</div>
+					<br>
+		</footer>
+
+  <!-- formulario de contacto -->  
+
+  <div class="contacto">
+
+    <div class="formulario">      
+      <h1>Formulario de contacto</h1>
+        <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+
+        <form action="mailto:archivosdeleonhoyos@gmail.com" method="post" enctype="text/plain">  
+		
+		<p>
+			<label for="nombre" class="colocar_nombre">Nombre
+				<span class="obligatorio">*</span>
+			</label>
+				<input type="text" name="nombre: " id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+		</p>
+		
+		<p>
+			<label for="email" class="colocar_email">Email del remitente
+			<span class="obligatorio">*</span>
+			</label>
+			<input type="email" name="remitente: " id="email" required="obligatorio" placeholder="Escribe tu Email">
+		</p>
+	
+		<p>
+			<label for="telefone" class="colocar_telefono">Teléfono del remitente
+			</label>
+			<input type="tel" name="telefono: " id="telefono" placeholder="Escribe tu teléfono">
+		</p>    
+		
+		<p>
+			<label for="website" class="colocar_website">Sitio web
+			</label>
+			<input type="url" name="website: " id="website" placeholder="Escribe la URL de tu web">
+		</p>    
+		
+		<p>
+			<label for="asunto" class="colocar_asunto">Asunto
+			<span class="obligatorio">*</span>
+			</label>
+			<input type="text" name="asunto: " id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+		</p>    
+		
+		<p>
+			<label for="mensaje" class="colocar_mensaje">Mensaje
+			<span class="obligatorio">*</span>
+			</label>                     
+							<textarea name="mensaje:  " class="texto_mensaje" id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+						</p>                    
+		
+		<button class="enviar" type="submit" name="Enviado desde hoja de vida" id="enviar"><p><b>Enviar</b></p></button>
+
+		<p class="aviso">
+			<span class="obligatorio"> * </span>Los campos son obligatorios.
+		</p>          
+            
+        </form>
+    </div>  
+</div>
+
+
+
+
+</body>
+</html>
